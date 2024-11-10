@@ -29,6 +29,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.profile.pan.nap.enabled=true \
     bluetooth.profile.pan.panu.enabled=true \
     bluetooth.profile.pbap.server.enabled=true \
+    bluetooth.profile.bas.client.enabled=true \
     bluetooth.device_id.vendor_id=0x001D
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
@@ -42,7 +43,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.bluetooth.leaudio.allow.multiple.context=false \
     persist.bluetooth.leaudio.bypass_allow_list=true \
     bluetooth.leaudio.dual_bidirection_swb.supported=true \
-    persist.bluetooth.leaudio.notify.idle.during.call=true
+    persist.bluetooth.leaudio.notify.idle.during.call=true \
+    persist.vendor.bluetooth.haltest=true
 
 ifneq ($(TARGET_HAS_LOW_RAM), true)
 PRODUCT_PACKAGES += Xpan
